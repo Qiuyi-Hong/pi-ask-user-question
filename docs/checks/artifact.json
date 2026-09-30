@@ -1,0 +1,19 @@
+{
+  "name": "@qiuyihong/pi-ask-user-question",
+  "version": "0.1.0",
+  "upstreamSnapshot": {
+    "repository": "https://github.com/juicesharp/rpiv-mono",
+    "directory": "packages/rpiv-ask-user-question",
+    "commit": "68d9a0014b70006d7b04b57933752338a2716db7",
+    "packageVersion": "2.12.0"
+  },
+  "snapshotTree": "113f1dd1714cacb47fc0b9e5679029a64f22c4b5",
+  "snapshotFiles": 105,
+  "productionModules": 40,
+  "artifactFiles": 109,
+  "integrity": "sha512-T6T54TrVEqh5W4kXNYK7I/iZi2QVCwSbKswndz6XXQ4xD71OIGXVVYVwzCkTRB02zYE9BpQEAWAPBRlZJ2uEQw==",
+  "sourceFidelity": "Complete paths, bytes, types/targets, and executable modes match Git objects",
+  "artifactFidelity": "Complete snapshot and downstream distribution files match checked source",
+  "relativeImports": "All production relative module targets exist",
+  "metadata": "Identity, provenance, direct entries, host peers, config pin, and optional i18n checked"
+}

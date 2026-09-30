@@ -1,0 +1,3 @@
+
+> @qiuyihong/pi-ask-user-question@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.json
