@@ -1,0 +1,15 @@
+
+> @qiuyihong/pi-ask-user-question@0.1.0 test
+> node --experimental-strip-types --test tests/*.test.ts
+
+✔ actual npm artifact retains the complete pinned upstream package and downstream requirements (1372.168958ms)
+✔ prepared local outer root completes an English questionnaire through Pi 0.99.1 (46942.015333ms)
+ℹ Isolated environment and diagnostics: /private/tmp/pi-local-smoke-ggeffj
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 47112.6135

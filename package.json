@@ -1,0 +1,52 @@
+{
+  "name": "@qiuyihong/pi-ask-user-question",
+  "version": "0.1.0",
+  "description": "Downstream Pi packaging of juicesharp's @juicesharp/rpiv-ask-user-question, with a complete unchanged upstream snapshot.",
+  "type": "module",
+  "author": "Qiuyi Hong",
+  "license": "MIT",
+  "keywords": ["pi-package", "pi-extension", "questionnaire"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qiuyi-Hong/pi-ask-user-question.git"
+  },
+  "homepage": "https://github.com/Qiuyi-Hong/pi-ask-user-question#readme",
+  "bugs": { "url": "https://github.com/Qiuyi-Hong/pi-ask-user-question/issues" },
+  "engines": { "node": ">=22.19.0" },
+  "publishConfig": { "access": "public" },
+  "pi": { "extensions": ["./upstream/rpiv-ask-user-question/index.ts"] },
+  "exports": {
+    ".": "./upstream/rpiv-ask-user-question/index.ts",
+    "./events": "./upstream/rpiv-ask-user-question/events.ts"
+  },
+  "files": ["upstream/rpiv-ask-user-question/**", "README.md", "LICENSE", "docs/requirements.md"],
+  "upstreamSnapshot": {
+    "repository": "https://github.com/juicesharp/rpiv-mono",
+    "directory": "packages/rpiv-ask-user-question",
+    "commit": "68d9a0014b70006d7b04b57933752338a2716db7",
+    "packageVersion": "2.12.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*",
+    "@juicesharp/rpiv-i18n": "*"
+  },
+  "peerDependenciesMeta": { "@juicesharp/rpiv-i18n": { "optional": true } },
+  "dependencies": { "@juicesharp/rpiv-config": "2.11.0" },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "0.99.1",
+    "@earendil-works/pi-tui": "0.99.1",
+    "@juicesharp/rpiv-i18n": "2.11.0",
+    "@modelcontextprotocol/sdk": "1.31.0",
+    "@lydell/node-pty": "1.2.0-beta.15",
+    "@types/node": "22.19.19",
+    "tar": "7.5.22",
+    "typebox": "1.3.27",
+    "typescript": "6.0.3"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  }
+}

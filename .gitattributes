@@ -1,0 +1,4 @@
+# Preserve upstream bytes on every checkout, including native Windows.
+upstream/rpiv-ask-user-question/** -text
+# Raw terminal evidence includes intentional control sequences and CR bytes.
+docs/checks/local-smoke-terminal.txt -text -diff
